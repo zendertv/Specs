@@ -17,14 +17,14 @@ $ pod repo add zendertv-specs git@github.com:zendertv/Specs.git
 Now you can verify the repo via
 ```
 $ cd ~/.cocoapods/repos/zendertv-specs
-$ pod repo lint Zender.podspec --sources=https://github.com/CocoaPods/Specs.git,https://github.com/zendertv/Specs.git --verbose
+$ pod repo lint .
 ```
 
 First upload the new zip files to `https://repo.zender.tv/ios/zender-sdk-ios-x.y.z.zip`
 
 Then verify your new podspec
 ```
-$ pod spec lint
+$ pod spec lint Zender.podspec --sources=https://github.com/CocoaPods/Specs.git,https://github.com/zendertv/Specs.git --verbose
 ```
 
 Once the podspec has been linted/verified you can publish it:
