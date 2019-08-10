@@ -46,7 +46,7 @@ Pod::Spec.new do |s|
         "lib/ZenderPhenix.framework"
     ]
     ph.dependency 'Zender/Core' , "#{s.version}"
-    ph.dependency 'PhenixSdk', '2019.2.1'
+    ph.dependency 'PhenixSdk', '2019.2.2'
   end
 
   s.subspec 'Youtube' do |yt|
