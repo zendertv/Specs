@@ -3,7 +3,7 @@
 This is the home of the Zender Cocoapods.
 This repo is a private repo created according to the <https://guides.cocoapods.org/making/private-cocoapods.html> procedure.
 
-# Reauirements
+# Requirements
 This requires cocopoads to be installed
 
 `gem install cocoapods`
