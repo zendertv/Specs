@@ -11,7 +11,7 @@ This requires cocopoads to be installed
 # Commands to publish 
 To publish configure it as an extra repo
 ```
-$ pod repo push zendertv-specs Zender.podspec --sources=https://github.com/CocoaPods/Specs.git,https://github.com/zendertv/Specs.git
+$ pod repo add zendertv-specs git@github.com:zendertv/Specs.git
 ```
 
 Now you can verify the repo via
@@ -36,4 +36,5 @@ $ pod repo push zendertv-specs Zender.podspec --sources=https://github.com/Cocoa
 # Update the repos
 `pod install --update-repo`
 or only update a repo
-`pod repo update <name-optional>`
+`pod repo update`
+`pod repo update zendertv-specs`
