@@ -34,11 +34,11 @@ Pod::Spec.new do |s|
         "zender-ios-sdk-v#{s.version}/Zender.framework"
     ]
    
-   #cs.script_phase = {
-        # :name => 'Zender strip frameworks',
-	#:script => "chmod +x ${PODS_TARGET_SRCROOT}/zender-ios-sdk-v#{s.version}/Zender.framework/strip-framework.sh && ${PODS_TARGET_SRCROOT}/zender-ios-sdk-v#{s.version}/Zender.framework/strip-framework.sh ",
-        #:execution_position => :after_compile
-   #}
+   cs.script_phase = {
+         :name => 'Zender strip frameworks',
+	:script => "chmod +x ${PODS_TARGET_SRCROOT}/zender-ios-sdk-v#{s.version}/Zender.framework/strip-framework.sh ; ${PODS_TARGET_SRCROOT}/zender-ios-sdk-v#{s.version}/Zender.framework/strip-framework.sh",
+        :execution_position => :after_compile
+   }
   end
 
   s.subspec 'Phenix' do |ph|
