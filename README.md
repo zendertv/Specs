@@ -34,7 +34,14 @@ $ pod repo push zendertv-specs Zender.podspec --sources=https://github.com/Cocoa
 ```
 
 # Update the repos
-`pod install --update-repo`
-or only update a repo
-`pod repo update`
-`pod repo update zendertv-specs`
+- `pod install --update-repo`
+- or only update a repo `pod repo update`
+- `pod repo update zendertv-specs`
+
+# Add it your Podfile
+Add this to your Podfile so it will resolve our Zender repo specs:
+
+```
+source 'https://github.com/zendertv/Specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+```
